@@ -1,8 +1,7 @@
 #include "DigiKeyboard.h"
 
 void setup() {
-  pinMode(1, OUTPUT); //LED çıkış
-}
+  pinMode(1, OUTPUT); //LED output
 
 void loop() {
    
